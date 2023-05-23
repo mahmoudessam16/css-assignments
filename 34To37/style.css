@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div-1 {
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    background-color: #eee;
+    margin: 15px auto;
+    line-height: 4;
+}
+.div-1:empty {
+    background-color: red;
+}
+/* ---- */
+
+.div-2 {
+    background-color: #ddd;
+    padding: 10px 20px 10px 40px;
+    margin: 30px auto;
+    width: fit-content;
+    position: relative;
+}
+
+.div-2:first-letter {
+    color: white;
+    background-color: red;
+    position: absolute;
+    margin-left: -49px;
+    padding: 5px;
+}
+
+/* ----- */
+.p-1 {
+    background-color: #eee;
+    width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    position: relative;
+    border-left: 5px solid #E91E63;
+}
+.p-1::before {
+    content: attr(data-person);
+    position: absolute;
+    left: -100px;
+    background-color: #ddd;
+    width: 60px;
+    height: 30px;
+    margin-top: -4px;
+    text-align: center;
+    line-height: 1.8;
+}
+.p-1::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #E91E63 transparent transparent;
+    left: -22px;
+}
+/* ----- */
+.p-2 {
+    background-color: #eee;
+    margin: 20px auto;
+    border-right: 5px solid #E91E63;
+    width: 400px;
+    padding: 10px 10px 10px 40px;
+    counter-increment: counter;
+    position: relative;
+}
+.p-2::before {
+    content: counter(counter);
+    position: absolute;
+    left: 0;
+    width: 35px;
+    height: 100%;
+    background-color: #E91E63;
+    top: 0;
+    text-align: center;
+    color: white;
+    line-height: 2.5;
+}

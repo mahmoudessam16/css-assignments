@@ -1,0 +1,87 @@
+/* Any Element With Class Title */
+.title {
+}
+
+/* element with id nav */
+#nav {
+}
+
+/* select all div elements */
+div {
+}
+
+/* select all h2 elements */
+h2 {
+}
+
+
+
+/* External style */
+/* <link rel="stylesheet" href="css/file.css" /> */
+
+/* Internal style */
+/* <style>
+p {
+    color: red;
+}
+</style> */
+
+/* Inline style */
+/* <p style="color: blue;">This Is Our Paragraph</p> */
+
+
+
+
+/* Valid */
+._user-name {
+}
+
+/* Valid */
+.-user-name {
+}
+
+/* Valid */
+.-user-name {
+}
+
+/* Not Valid */
+.1user-name {
+}
+
+/* Not Valid */
+.@user-name {
+}
+
+/* Not Valid */
+.user@name {
+}
+
+/* Valid */
+._user10name {
+}
+
+/* Valid */
+.u {
+}
+
+
+
+/* Bad */
+.USERNAME {
+}
+
+/* Bad */
+.UserName {
+}
+
+/* Good */
+.user-name {
+}
+
+/* Bad */
+.userName {
+}
+
+/* Good */
+.usernameprofile {
+}

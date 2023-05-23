@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.assign-1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.green {
+    background-color: #009688;
+    z-index: 3;
+    top: 35px;
+    left: 35px;
+}
+
+.red {
+    background-color: #F44336;
+    z-index: 4;
+    left: 50px;
+    top: 50px;
+}
+
+.blue {
+    background-color: #03A9F4;
+    z-index: 2;
+    top: 20px;
+    left: 20px;
+}
+
+.black {
+    background-color: #333333;
+    left: 20px;
+    top: 35px;
+    z-index: 1;
+}
+
+/* ------ */
+.assign-2 {
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #EBEBEB;
+    padding: 10px;
+    line-height: 1.6;
+    position: relative;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #f77268 #2196f3;
+}
+.top-left, .bottom-left {
+    position: absolute;
+    background-color: #2196f3;
+    color: white;
+    padding: 0 10px;
+    border-right: 3px solid #f77268;
+}
+.top-left {
+    top: -15px;
+    left: -15px;
+}
+.bottom-left {
+    bottom: -15px;
+    left: -15px;
+}
+
+.top-right, .bottom-right {
+    position: absolute;
+    background-color: #2196f3;
+    color: white;
+    padding: 0 10px;
+    border-left: 3px solid #f77268;
+}
+.top-right {
+    top: -15px;
+    right: -15px;
+}
+.bottom-right {
+    bottom: -15px;
+    right: -15px;
+}
+
+/* ----- */
+.parent {
+    width: 400px;
+    margin: 30px auto;
+    list-style: none;
+}
+ul.parent > li {
+    margin-bottom: 20px;
+    background-color: #eeeeee;
+    padding: 10px;
+}
+.html, .css { 
+    margin-top: 5px;
+}
+.parent .html li, .parent .css li {
+    background-color: #fff;
+    padding: 8px;
+    margin-bottom: 7px;
+}
+.parent .javascript {
+    padding-left: 0;
+    margin-top: 8px;
+}
+.parent .javascript li {
+    background-color: #fff;
+    padding: 8px;
+    margin-bottom: 7px;
+    list-style-position: inside;
+}
+/* ----- */
+
+table {
+    margin: 20px auto;
+    width: 700px;
+    text-align: center;
+}
+thead th {
+    background-color: #404040;
+    color: white;
+    padding: 18px;
+}
+tbody td {
+    background-color: #eeeeee;
+    padding: 18px;
+}
+a.view, a.delete {
+    text-decoration: none;
+    margin-right: 5px;
+    color: white;
+    padding: 4px 8px;
+}
+a.view {
+    background-color: #03A9F4;
+}
+a.delete {
+    background-color: #f77268;
+}
+caption {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
